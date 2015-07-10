@@ -1,8 +1,6 @@
-/*body {
-    overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-}*/
-
+body{
+  font-family: 'Roboto', sans-serif;
+}
 
 header {
     text-align: center;
@@ -20,15 +18,16 @@ header {
 header .intro-text {
     padding-bottom: 50px;
     padding-top: 100px;
-    position: absolute;
-    width: 100%;
+    width: 98%;
     top: 0;
+    position: absolute;
     z-index: 2;
+    color: rgba(199, 223, 207, 0.62);
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
@@ -37,7 +36,7 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
@@ -46,13 +45,13 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 400px;
+        padding-top: 350px;
         padding-bottom: 100px;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
@@ -61,11 +60,39 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
     }
+}
+
+@media(max-width:500px) {
+    header .intro-text {
+        padding-top: 210px;
+        /*padding-bottom: 100px;*/
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-style: italic;
+        line-height: 20px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+}
+
+ul{
+  z-index: 0;
 }
 
 .rslides {
