@@ -50,7 +50,7 @@ body {
 @media(max-width:480px) {
     #h2 { font-size: 35px;}
     #h1 { font-size: 80px;}
-    .titel{ margin-top: 70%;}
+    .titel{ margin-top: 50%;}
 }
 
 .more{
