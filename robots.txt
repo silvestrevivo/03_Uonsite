@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /css/
+Disallow: /error/
+Disallow: /font/
+Disallow: /img/
+Disallow: /js/
+Disallow: /stats/
+
+Sitemap: http://www.huisartspraktijksoeter.nl/sitemap.xml
