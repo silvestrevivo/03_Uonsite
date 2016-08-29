@@ -1,0 +1,9 @@
+body, html {
+  height: 100%; }
+
+.banner {
+  background: url("../img/iqaGK5at6JBfL.gif") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  padding: 10%; }
