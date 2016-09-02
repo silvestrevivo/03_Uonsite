@@ -16,11 +16,9 @@ body, html {
   .banner.visible {
     opacity: 1; }
   .banner h1 {
-    font-size: 120px;
     color: rgba(255, 255, 255, 0.5);
     margin-top: 15%;
     font-family: "Righteous", cursive;
-    opacity: 0;
     -webkit-transition: opacity 2s ease-in-out 1s;
     -moz-transition: opacity 2s ease-in-out 1s;
     -ms-transition: opacity 2s ease-in-out 1s;
@@ -33,8 +31,20 @@ body, html {
       .banner h1 {
         font-size: 70px;
         margin-top: 35%; } }
-    .banner h1.visible {
-      opacity: 1; }
+    @media screen and (min-width: 768px) {
+      .banner h1 {
+        font-size: 80px; } }
+    @media screen and (min-width: 992px) {
+      .banner h1 {
+        font-size: 100px; } }
+    @media screen and (min-width: 1200px) {
+      .banner h1 {
+        font-size: 120px; } }
+    .banner h1 ul.title li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      opacity: 0; }
   .banner h2 {
     color: white;
     font-size: 35px;
@@ -66,17 +76,17 @@ body, html {
       .banner h2 a:hover {
         color: rgba(255, 255, 255, 0.4);
         text-decoration: none; }
-  .banner ul {
+  .banner ul.subtitle {
     margin-top: 1%;
     padding-left: 0; }
-    .banner ul li {
+    .banner ul.subtitle li {
       display: inline-block;
       list-style-type: none;
       margin: 0 30px; }
       @media screen and (max-width: 480px) {
-        .banner ul li {
+        .banner ul.subtitle li {
           margin: 0 5px; } }
-      .banner ul li a {
+      .banner ul.subtitle li a {
         color: rgba(255, 255, 255, 0.4);
         font-size: 45px;
         -webkit-transition: all 0.3s ease-in-out;
@@ -85,8 +95,8 @@ body, html {
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
         @media screen and (max-width: 480px) {
-          .banner ul li a {
+          .banner ul.subtitle li a {
             font-size: 35px; } }
-        .banner ul li a:hover {
+        .banner ul.subtitle li a:hover {
           color: #81540f;
           text-decoration: none; }

@@ -14,19 +14,27 @@ body, html
   &.visible
     opacity: 1
   h1
-    font-size: 120px
     color: rgba(255, 255, 255, 0.5)
     margin-top: 15%
     font-family: 'Righteous', cursive
-    opacity: 0
     +transition(opacity 2s ease-in-out 1s)
     @media screen and (max-width:768px)
       font-size: 100px
     @media screen and (max-width:480px)
       font-size: 70px
       margin-top: 35%
-    &.visible
-      opacity: 1
+    @media screen and (min-width:768px)
+      font-size: 80px
+    @media screen and (min-width:992px)
+      font-size: 100px
+    @media screen and (min-width:1200px)
+      font-size: 120px
+    ul.title
+      li
+        display: inline-block
+        list-style-type: none
+        margin: 0
+        opacity: 0
   h2
     color: white
     font-size: 35px
@@ -48,7 +56,7 @@ body, html
       &:hover
         color: rgba(255, 255, 255, 0.4)
         text-decoration: none
-  ul
+  ul.subtitle
     margin-top: 1%
     padding-left: 0
     li
